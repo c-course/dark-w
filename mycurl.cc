@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 
 	char buffer[MAX];
 	int l = recv(sock, buffer, MAX, 0);
-	const char *ofs_n = basename(fn);
+	const char *ofs_n = basename((char *)fn);
 	std::ofstream ofs(ofs_n, std::ios::binary);
 	ofs.write(buffer, l);
 
