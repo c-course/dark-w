@@ -4,6 +4,7 @@
 #include <fstream>
 #include <iostream>
 #include <unistd.h>
+#include <libgen.h>
 
 #define BZERO(addr, size) memset(addr, 0, size)
 #define MAX 1024
