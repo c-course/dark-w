@@ -10,6 +10,9 @@ add_test(test-demo1 demo1)
 add_executable(demo16 demo16.cc)
 add_test(test-demo16 demo16)
 
+add_executable(boost-socket-server-demo boost-socket-server-demo)
+add_test(test-boost-socket-server-demo boost-socket-server-demo)
+
 add_executable(mycurl mycurl.cc)
 add_test(test-mycurl mycurl)
 
